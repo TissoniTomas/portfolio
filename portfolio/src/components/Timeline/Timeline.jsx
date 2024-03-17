@@ -24,12 +24,12 @@ import frontend from "../../assets/certificados/frontend-carrera.png"
 
 const TimelineEstudios = () => {
   return (
-    <Timeline timelineBarType="solid" className="mt-20">
+    <Timeline timelineBarType="solid" className="mt-20 mx-10">
       <Timeline.Item>
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
           <Timeline.Time>Abril 2023 - Junio 2023</Timeline.Time>
-          <Timeline.Title>Curso Desarrollo Web</Timeline.Title>
+          <Timeline.Title className="text-yellow-400">Curso Desarrollo Web</Timeline.Title>
           <Timeline.Body>
             Creacion de mi primer sitio web de manera estatica donde aprendi
             sobre sintaxis, estrucuturas, estilos y librerias como Bootstrap y
@@ -68,7 +68,7 @@ const TimelineEstudios = () => {
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
           <Timeline.Time>Septiembre 2023 - Diciembre 2023</Timeline.Time>
-          <Timeline.Title>Curso Javascript</Timeline.Title>
+          <Timeline.Title className="text-yellow-400">Curso Javascript</Timeline.Title>
           <Timeline.Body>
             Fundamentos del lenguaje orientado a Front-End. Control de Flujos.
             Ciclos e iteraciones. Objetos e Arrays. Librerias. Asincronia y
@@ -91,7 +91,7 @@ const TimelineEstudios = () => {
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
           <Timeline.Time>Noviembre 2023 - Enero 2024</Timeline.Time>
-          <Timeline.Title>Curso React JS</Timeline.Title>
+          <Timeline.Title className="text-yellow-400">Curso React JS</Timeline.Title>
           <Timeline.Body>
             Programacion mediante componentes. Manipulacion del Virtual DOM.
             JSX. Distinto uso de librerias via NPM. Renderizado condicional.
@@ -129,7 +129,7 @@ const TimelineEstudios = () => {
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
           <Timeline.Time>Enero 2024 - Julio 2024</Timeline.Time>
-          <Timeline.Title>Programacion Back-end</Timeline.Title>
+          <Timeline.Title className="text-yellow-400">Programacion Back-end</Timeline.Title>
           <Timeline.Body>
             Desarrollo de aplicaciones modernas del lado del servidor con Node
             JS, Express JS y Mongo DB. Manejo de procesos distribuidos, control
