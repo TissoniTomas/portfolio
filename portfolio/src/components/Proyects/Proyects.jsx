@@ -21,8 +21,8 @@ import { SiVite } from "react-icons/si";
 const Proyects = ({proyectsRef}) => {
   return (
     <div id="proyects" ref={proyectsRef} className="text-center flex flex-col items-center">
-      <h2 className="text-4xl font-serif my-10 text-center text-white mt-36 animate-fade animate-once animate-duration-1000 animate-delay-500"> Proyectos a la fecha</h2>
-      <div className="grid grid-cols-1 place-items-center  lg:grid-cols-2 lg:grid-rows-2 lg:gap-x-64 lg:gap-y-10 ">
+      <h2 className=" text-4xl px-2 lg:text-5xl montserrat-title hover:decoration-double hover:underline hover:decoration-error-800 my-10 text-center text-white mt-36 animate-fade animate-once animate-duration-1000 animate-delay-500"> PROYECTOS A LA FECHA</h2>
+      <div className="grid grid-cols-1 gap-y-20 place-items-center  lg:grid-cols-2 lg:grid-rows-2 lg:gap-x-64 lg:gap-y-10 ">
         <Card
           title="Six Days Supps"
           tecnologiasIcons={[

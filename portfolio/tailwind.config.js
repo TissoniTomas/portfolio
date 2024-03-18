@@ -8,7 +8,17 @@ export default {
   ],
   presets: [keepPreset],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif']
+      },
+      fontWeight: {
+        '700': '700'
+      },
+      fontStyle: {
+        'normal': 'normal'
+      }
+    },
   },
   plugins: [
     require('tailwindcss-animated')

@@ -26,10 +26,10 @@ import frontend from "../../assets/certificados/frontend-carrera.png"
 const TimelineEstudios = () => {
   return (
     <>
-    <h1  className="text-4xl font-serif my-10 text-center text-white mt-36 animate-fade animate-once animate-duration-1000 animate-delay-500">Cursos y Formacion Academica</h1>
+    <h1  className=" text-4xl px-2 lg:text-5xl hover:decoration-double hover:underline hover:decoration-error-800 montserrat-title my-10 text-center text-white lg:mt-36 ">CURSOS Y FORMACION ACADEMICA</h1>
     <div className="flex flex-col justify-center items-center ">
 
-    <Timeline timelineBarType="solid" className="mt-20 mx-10  animate-fade animate-once animate-duration-1000 animate-delay-500">
+    <Timeline timelineBarType="solid" className="mt-20 mx-10 ">
       <Timeline.Item>
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
@@ -64,7 +64,7 @@ const TimelineEstudios = () => {
               </li>
             </ul>
           </Timeline.Body>
-          <div className="flex items-center justify-center  mt-6">
+          <div className="flex items-center justify-center mt-6">
             <ModalCertificados certificado={desarrolloWeb} carrera={false} />
           </div>
         </Timeline.Content>
@@ -104,7 +104,7 @@ const TimelineEstudios = () => {
           </Timeline.Body>
           <Timeline.Body>
             Tecnologias utilizadas:
-            <ul className="grid grid-cols-3 grid-rows-2 justify-items-center mb-40 mt-20 gap-y-32 ">
+            <ul className="grid grid-rows-2 grid-cols-3 gap-y-32 mb-40 mt-20 justify-items-center h-20 ">
               <li>
                 <DiReact size={64} color="skyblue" />
               </li>
