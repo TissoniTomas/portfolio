@@ -5,13 +5,10 @@ import { db } from "../../firebase/firebaseConfig";
 import { Spinner } from "keep-react";
 import { Textarea } from "keep-react";
 
-
-
 const Contacto = ({ contactoRef }) => {
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
-  
   });
 
   const [estadoData, setEstadoData] = useState(null);
@@ -62,7 +59,9 @@ const Contacto = ({ contactoRef }) => {
           className="flex flex-col items-center w-screen justify-center"
           onSubmit={handleSubmit}
         >
-          <Label className="text-xl mb-4 mt-2" htmlFor="name">Ingresar Nombre</Label>
+          <Label className="text-xl mb-4 mt-2 text-white" htmlFor="name">
+            Ingresar Nombre
+          </Label>
           <Input
             className="w-96 text-center "
             type="text"
@@ -72,7 +71,9 @@ const Contacto = ({ contactoRef }) => {
             placeholder="Nombre"
             required
           />
-          <Label className="text-xl mb-4 mt-2" htmlFor="email">Ingresar E-mail</Label>
+          <Label className="text-xl mb-4 mt-2 text-white" htmlFor="email">
+            Ingresar E-mail
+          </Label>
           <Input
             type="email"
             name="email"
@@ -82,7 +83,9 @@ const Contacto = ({ contactoRef }) => {
             className="ps-11 w-96 text-center "
             required
           />
-          <Label className="text-xl mb-4 mt-2" htmlFor="email">Ingresar Asunto</Label>
+          <Label className="text-xl mb-4 mt-2 text-white" htmlFor="email">
+            Ingresar Asunto
+          </Label>
 
           <Input
             type="text"
@@ -90,15 +93,21 @@ const Contacto = ({ contactoRef }) => {
             value={formData.asunto}
             onChange={handleChange}
             placeholder="Asunto"
-            className="ps-11 w-96 text-center "
+            className="ps-11 w-96 text-center placeholder-red-800 "
             required
           />
- <Label className="text-xl mb-4 mt-2 px-4 text-center" htmlFor="email">Ingrese informacion adicional, dudas, ¡o lo que quieras!</Label>
+          <Label className="text-xl mb-4 mt-2 px-4 text-center" htmlFor="email">
+            Ingrese informacion adicional, dudas, ¡o lo que quieras!
+          </Label>
 
-          <Textarea  name="textarea"
+          <Textarea
+            name="textarea"
             value={formData.textarea}
-            onChange={handleChange} className="ps-11 w-96 h-40 text-center"
-            required placeholder="Write your message here." />
+            onChange={handleChange}
+            className="ps-11 w-96 h-40 text-center"
+            required
+            placeholder="Write your message here."
+          />
 
           <Button
             className="my-10"
@@ -115,7 +124,9 @@ const Contacto = ({ contactoRef }) => {
 
   return (
     <div id="contacto" ref={contactoRef}>
-      <h2 className="text-5xl hover:decoration-double hover:underline hover:decoration-error-800 montserrat-title my-10 text-center text-white mt-36 ">CONTACTO</h2>
+      <h2 className="text-5xl hover:decoration-double hover:underline hover:decoration-error-800 montserrat-title my-10 text-center text-white mt-36 ">
+        CONTACTO
+      </h2>
       <p className="text-center text-white text-3xl px-10 mb-10">
         Estoy abierto frente a cualquier oportunidad laboral tanto de manera
         free-lance como la oportunidad de poder sumarme a un equipo de trabajo y

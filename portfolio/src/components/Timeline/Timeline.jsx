@@ -33,15 +33,15 @@ const TimelineEstudios = () => {
       <Timeline.Item>
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
-          <Timeline.Time>Abril 2023 - Junio 2023</Timeline.Time>
+          <Timeline.Time  className="text-gray-300">Abril 2023 - Junio 2023</Timeline.Time>
           <Timeline.Title className="text-yellow-400">Curso Desarrollo Web</Timeline.Title>
-          <Timeline.Body>
+          <Timeline.Body  className="text-gray-300">
             Creacion de mi primer sitio web de manera estatica donde aprendi
             sobre sintaxis, estrucuturas, estilos y librerias como Bootstrap y
             SASS, la importancia del SEO en el desarrollo y utilizacion de
             servidores gratuitos.
           </Timeline.Body>
-          <Timeline.Body>
+          <Timeline.Body  className="text-gray-300">
             Tecnologias utilizadas:
             <ul className="grid grid-rows-2 grid-cols-3 gap-y-32 mb-40 mt-20 justify-items-center h-20">
               <li>
@@ -72,14 +72,14 @@ const TimelineEstudios = () => {
       <Timeline.Item>
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
-          <Timeline.Time>Septiembre 2023 - Diciembre 2023</Timeline.Time>
+          <Timeline.Time  className="text-gray-300">Septiembre 2023 - Diciembre 2023</Timeline.Time>
           <Timeline.Title className="text-yellow-400">Curso Javascript</Timeline.Title>
-          <Timeline.Body>
+          <Timeline.Body  className="text-gray-300">
             Fundamentos del lenguaje orientado a Front-End. Control de Flujos.
             Ciclos e iteraciones. Objetos e Arrays. Librerias. Asincronia y
             promesas.
           </Timeline.Body>
-          <Timeline.Body>
+          <Timeline.Body  className="text-gray-300">
             Tecnologias utilizadas:
             <ul className="flex items-center justify-center mb-32 mt-20">
               <li className="bg-black w-10">
@@ -95,14 +95,14 @@ const TimelineEstudios = () => {
       <Timeline.Item>
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
-          <Timeline.Time>Noviembre 2023 - Enero 2024</Timeline.Time>
+          <Timeline.Time  className="text-gray-300">Noviembre 2023 - Enero 2024</Timeline.Time>
           <Timeline.Title className="text-yellow-400">Curso React JS</Timeline.Title>
-          <Timeline.Body>
+          <Timeline.Body  className="text-gray-300">
             Programacion mediante componentes. Manipulacion del Virtual DOM.
             JSX. Distinto uso de librerias via NPM. Renderizado condicional.
             Firebase como base de datos.
           </Timeline.Body>
-          <Timeline.Body>
+          <Timeline.Body  className="text-gray-300">
             Tecnologias utilizadas:
             <ul className="grid grid-rows-2 grid-cols-3 gap-y-32 mb-40 mt-20 justify-items-center h-20 ">
               <li>
@@ -133,15 +133,15 @@ const TimelineEstudios = () => {
       <Timeline.Item>
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
-          <Timeline.Time>Enero 2024 - Julio 2024</Timeline.Time>
+          <Timeline.Time >Enero 2024 - Julio 2024</Timeline.Time>
           <Timeline.Title className="text-yellow-400">Programacion Back-end</Timeline.Title>
-          <Timeline.Body>
+          <Timeline.Body className="text-gray-300">
             Desarrollo de aplicaciones modernas del lado del servidor con Node
             JS, Express JS y Mongo DB. Manejo de procesos distribuidos, control
             de grandes volumenes de datos y despliegue a distintas plataformas
             web.
           </Timeline.Body>
-          <Timeline.Body>
+          <Timeline.Body  className="text-gray-300">
             Tecnologias utilizadas:
             <ul className="grid grid-cols-3 grid-rows-2 justify-items-center ">
               <li>
@@ -160,9 +160,9 @@ const TimelineEstudios = () => {
       <Timeline.Item>
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
-          <Timeline.Time>Junio 2023 - Actualidad</Timeline.Time>
+          <Timeline.Time   className="text-gray-300">Junio 2023 - Actualidad</Timeline.Time>
           <Timeline.Title className="text-[#A4243B]">Licenciatura en Ciencias de la Computacion</Timeline.Title>
-          <Timeline.Body>
+          <Timeline.Body  className="text-gray-300">
            Carrera de Grado de la Universidad de Buenos Aires, actualmente cursando la ultima parte del CBC
 
           </Timeline.Body>
