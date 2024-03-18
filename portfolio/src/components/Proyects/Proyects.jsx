@@ -35,7 +35,7 @@ const Proyects = ({proyectsRef}) => {
         />
         <Card title="Restaurante JS"  tecnologiasIcons={<SiJavascript size={40} />} link="https://restaurante-js.vercel.app/index.html" img={restaurante}/>
         <Card title  ="The Last Store" tecnologiasIcons={[<FaReact size={40} />,<SiTailwindcss size={40} />, <SiVite size={40} />   ] } link="https://ecommerce-react-six-lyart.vercel.app/" img={laststore}/>
-        <Card title  ="Futbolizados" tecnologiasIcons={[<FaReact size={40} />,<SiTailwindcss size={40} />, <SiVite size={40} />   ] } link="" img={futbolizados} construccion={true}/>
+        <Card title  ="Futbolizados" tecnologiasIcons={[<FaReact size={40} />,<SiTailwindcss size={40} />, <SiVite size={40} />   ] }  img={futbolizados} construccion={true}/>
        
       </div>
     </div>
