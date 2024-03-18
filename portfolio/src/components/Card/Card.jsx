@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Button } from "keep-react";
+import { FaGithub } from "react-icons/fa";
 
-const Card = ({title, tecnologiasIcons, link, img, construccion}) => {
+const Card = ({title, tecnologiasIcons, link, img, construccion,linkCodigo}) => {
 
     const [hoverCard,setHoverCard] = useState(false)
   return (
@@ -13,9 +14,13 @@ const Card = ({title, tecnologiasIcons, link, img, construccion}) => {
         {tecnologiasIcons}
        
       </ul>
-   <a target="_blank" href={link}><Button  className="mt-10" color={construccion ? "error" : "success"} variant="outline">
+      <div className='flex items-center mt-10'>
+
+   <a target="_blank" href={link}><Button  className="h-12 mr-10" color={construccion ? "error" : "success"} variant="outline">
   {construccion ? "SITIO EN CONSTRUCCION" : "Ver Sitio Web"}
 </Button></a>
+<a target='blank' href={linkCodigo}> <Button className='h-12 w-14' color='success' shape="icon"><FaGithub size={24} /></Button></a>
+      </div>
       
     </div> : 
     

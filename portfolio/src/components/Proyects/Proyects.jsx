@@ -32,10 +32,11 @@ const Proyects = ({proyectsRef}) => {
           ]}
           link="https://pf-tissoni.vercel.app/"
           img={sixdays}
+          linkCodigo="https://github.com/TissoniTomas/PF-Tissoni"
         />
-        <Card title="Restaurante JS"  tecnologiasIcons={<SiJavascript size={40} />} link="https://restaurante-js.vercel.app/index.html" img={restaurante}/>
-        <Card title  ="The Last Store" tecnologiasIcons={[<FaReact size={40} />,<SiTailwindcss size={40} />, <SiVite size={40} />   ] } link="https://ecommerce-react-six-lyart.vercel.app/" img={laststore}/>
-        <Card title  ="Futbolizados" tecnologiasIcons={[<FaReact size={40} />,<SiTailwindcss size={40} />, <SiVite size={40} />   ] }  img={futbolizados} construccion={true}/>
+        <Card title="Restaurante JS"  tecnologiasIcons={<SiJavascript size={40} />} link="https://restaurante-js.vercel.app/index.html" img={restaurante} linkCodigo="https://github.com/TissoniTomas/Restaurante-JS"/>
+        <Card title  ="The Last Store" tecnologiasIcons={[<FaReact size={40} />,<SiTailwindcss size={40} />, <SiVite size={40} />   ] } link="https://ecommerce-react-six-lyart.vercel.app/" img={laststore} linkCodigo="https://github.com/TissoniTomas/Ecommerce-React"/>
+        <Card title  ="Futbolizados" tecnologiasIcons={[<FaReact size={40} />,<SiTailwindcss size={40} />, <SiVite size={40} />   ] }  img={futbolizados} construccion={true} linkCodigo="https://github.com/TissoniTomas/futbolizados-react"/>
        
       </div>
     </div>
