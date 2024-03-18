@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react'
-import { Check } from 'phosphor-react'
+
 import { Button, Modal, Typography } from 'keep-react'
 
 
@@ -29,7 +29,7 @@ export const ModalCertificados = ({certificado, carrera}) => {
   return (
     <>
     
-      <Button onClick={openModal} className='hover:bg-cyan-500'>{button}</Button>
+      <Button onClick={openModal} color={carrera ? 'success' : 'primary'} className='hover:bg-cyan-500'>{button}</Button>
       <Modal isOpen={isOpen} onClose={closeModal}>
         <Modal.Body className="flex flex-col items-center w-screen">
           

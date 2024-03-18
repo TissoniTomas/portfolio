@@ -1,4 +1,5 @@
-import { Button, Timeline } from "keep-react";
+import { Timeline, Button, Divider } from "keep-react";
+
 import { ArrowRight, CalendarBlank } from "phosphor-react";
 import { DiReact } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
@@ -24,7 +25,11 @@ import frontend from "../../assets/certificados/frontend-carrera.png"
 
 const TimelineEstudios = () => {
   return (
-    <Timeline timelineBarType="solid" className="mt-20 mx-10">
+    <>
+    <h1  className="text-4xl font-serif my-10 text-center text-white mt-36 animate-fade animate-once animate-duration-1000 animate-delay-500">Cursos y Formacion Academica</h1>
+    <div className="flex flex-col justify-center items-center ">
+
+    <Timeline timelineBarType="solid" className="mt-20 mx-10  animate-fade animate-once animate-duration-1000 animate-delay-500">
       <Timeline.Item>
         <Timeline.Point icon={<CalendarBlank size={16} />} />
         <Timeline.Content>
@@ -38,28 +43,28 @@ const TimelineEstudios = () => {
           </Timeline.Body>
           <Timeline.Body>
             Tecnologias utilizadas:
-            <ul className="grid grid-rows-2 grid-cols-3 justify-items-center h-20">
+            <ul className="grid grid-rows-2 grid-cols-3 gap-y-32 mb-40 mt-20 justify-items-center h-20">
               <li>
-                <DiHtml5 size={40} color="orange" />
+                <DiHtml5 size={64} color="orange" />
               </li>
               <li>
-                <DiCss3 size={40} color="lightblue" />
+                <DiCss3 size={64} color="lightblue" />
               </li>
               <li>
-                <DiSass size={40} color="pink" />
+                <DiSass size={64} color="pink" />
               </li>
               <li>
-                <DiBootstrap size={40} color="blue" />
+                <DiBootstrap size={64} color="blue" />
               </li>
               <li>
-                <DiGit size={40} color="red" />
+                <DiGit size={64} color="red" />
               </li>
               <li>
-                <DiGithubBadge size={40} color="black" />
+                <DiGithubBadge size={64} color="white" />
               </li>
             </ul>
           </Timeline.Body>
-          <div className="flex items-center justify-center mt-6">
+          <div className="flex items-center justify-center  mt-6">
             <ModalCertificados certificado={desarrolloWeb} carrera={false} />
           </div>
         </Timeline.Content>
@@ -76,9 +81,9 @@ const TimelineEstudios = () => {
           </Timeline.Body>
           <Timeline.Body>
             Tecnologias utilizadas:
-            <ul className="flex items-center justify-center">
+            <ul className="flex items-center justify-center mb-32 mt-20">
               <li className="bg-black w-10">
-                <DiJsBadge size={40} color="yellow" />
+                <DiJsBadge size={64} color="yellow" />
               </li>
             </ul>
           </Timeline.Body>
@@ -99,21 +104,21 @@ const TimelineEstudios = () => {
           </Timeline.Body>
           <Timeline.Body>
             Tecnologias utilizadas:
-            <ul className="grid grid-cols-3 grid-rows-2 justify-items-center ">
+            <ul className="grid grid-cols-3 grid-rows-2 justify-items-center mb-40 mt-20 gap-y-32 ">
               <li>
-                <DiReact size={40} color="skyblue" />
+                <DiReact size={64} color="skyblue" />
               </li>
               <li>
-                <SiTailwindcss size={40} color="skyblue" />
+                <SiTailwindcss size={64} color="skyblue" />
               </li>
               <li>
-                <SiMui size={40} color="blue" />
+                <SiMui size={64} color="blue" />
               </li>
               <li>
-                <SiVite size={40} color="purple" />
+                <SiVite size={64} color="purple" />
               </li>
               <li>
-                <FaNpm size={40} color="red" />
+                <FaNpm size={64} color="red" />
               </li>
             </ul>
           </Timeline.Body>
@@ -140,19 +145,44 @@ const TimelineEstudios = () => {
             Tecnologias utilizadas:
             <ul className="grid grid-cols-3 grid-rows-2 justify-items-center ">
               <li>
-                <SiExpress size={40} color="black" />
+                <SiExpress size={64} color="white" />
               </li>
               <li>
-                <SiMongodb size={40} color="green" />
+                <SiMongodb size={64} color="green" />
               </li>
               <li>
-                <SiNestjs size={40} color="red" />
+                <SiNestjs size={64} color="red" />
               </li>
             </ul>
           </Timeline.Body>
         </Timeline.Content>
       </Timeline.Item>
+      <Timeline.Item>
+        <Timeline.Point icon={<CalendarBlank size={16} />} />
+        <Timeline.Content>
+          <Timeline.Time>Junio 2023 - Actualidad</Timeline.Time>
+          <Timeline.Title className="text-[#A4243B]">Licenciatura en Ciencias de la Computacion</Timeline.Title>
+          <Timeline.Body>
+           Carrera de Grado de la Universidad de Buenos Aires, actualmente cursando la ultima parte del CBC
+
+          </Timeline.Body>
+         
+          <Timeline.Body>
+           <a target="_blank" href="https://computacion.dc.uba.ar/plan-de-estudios-2023/">   <Button color="primary" variant="outline">
+       VER PLAN DE ESTUDIOS
+      </Button></a>
+
+          </Timeline.Body>
+         
+
+
+  
+        </Timeline.Content>
+      </Timeline.Item>
     </Timeline>
+    </div>
+    <Divider color="error" className="mt-20" />
+    </>
   );
 };
 
